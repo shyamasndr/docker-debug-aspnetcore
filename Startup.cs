@@ -30,7 +30,7 @@ namespace docker_debug_aspnetcore
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync("Hello World from docker!");
             });
         }
     }

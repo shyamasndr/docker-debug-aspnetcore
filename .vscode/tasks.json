@@ -11,6 +11,14 @@
             ],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "publish",
+            "args": [                
+                "${workspaceRoot}/docker-debug-aspnetcore.csproj"
+            ],
+            "isBuildCommand": true,            
+            "problemMatcher": "$msCompile"
         }
-    ]
+    ]   
 }

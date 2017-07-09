@@ -9,3 +9,7 @@ Above command creates image with name "docker-debug-dotnet" using docker file do
 2. Step 2
 
 docker-compose -f docker-compose.debug.yml build
+
+docker-compose -f docker-compose.debug.yml up -d
+
+docker exec -it docker-debug-aspnetcore /bin/bash

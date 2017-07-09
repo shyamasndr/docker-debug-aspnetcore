@@ -5,4 +5,4 @@ services:
     image: docker-debug-aspnetcore
     build: .
     ports:
-      - 5000:5000
+      - 6000:6000

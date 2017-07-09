@@ -14,7 +14,7 @@ namespace docker_debug_aspnetcore
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseIISIntegration()
+                .UseUrls("http://*:6000")
                 .UseStartup<Startup>()
                 .Build();
 
