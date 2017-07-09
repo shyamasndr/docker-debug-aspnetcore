@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  docker-debug-aspnetcore:
+    image: docker-debug-aspnetcore
+    build: .
+    ports:
+      - 5000:5000
