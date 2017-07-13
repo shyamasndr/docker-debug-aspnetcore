@@ -1,8 +1,16 @@
-version: '2.1'
+version: '3'
 
 services:
-  docker-debug-aspnetcore:
-    image: docker-debug-aspnetcore
-    build: .
+  docker-run-aspnetcore:
+    image: docker-run-aspnetcore 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    deploy:      
+      replicas: 2
     ports:
       - 6000:6000
+     networks:
+      - webnet
+networks:
+  webnet:
