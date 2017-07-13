@@ -11,6 +11,6 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - DOTNET_USE_POLLING_FILE_WATCHER=1
     ports: 
-      - "6000:6000"
+      - 6000:6000
     volumes: 
       - ./bin/Debug/netcoreapp1.1/publish/:/app
