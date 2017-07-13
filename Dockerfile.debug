@@ -1,6 +1,8 @@
 FROM microsoft/aspnetcore:1.1
 ENV NUGET_XMLDOC_MODE skip
-
+# Set proxy server url if your host and container is behind a proxy
+#ENV http_proxy=http://proxyurl:port \
+#    https_proxy=http://proxyurl:port
 WORKDIR /vsdbg
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
