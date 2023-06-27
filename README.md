@@ -30,9 +30,13 @@ docker exec -it docker-debug-aspnetcore /bin/bash
 ```
 [Update]
 Some usefull links
+
 https://www.freecodecamp.org/news/how-to-debug-dockerized-net-core-apps-in-vs-code/
+
 https://www.cshelton.co.uk/blog/2021/03/12/dotnet-core-docker-dev-environment/
+
 https://github.com/thehaseebahmed/vscode-dotnet-docker-debug
+
 https://github.com/shyamasndr/vscode-dotnet-docker-debug(Fork)
 
 
